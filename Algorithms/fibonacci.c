@@ -14,17 +14,16 @@
 unsigned long lookUp[100];
 
 unsigned long fibonacciSumTillTerm(long n) {
-    if (n <= 1) {
-        return n;
-    } else {
-        if (lookUp[n] != -1)
-            return lookUp[n];
-        else
+    if (lookUp[n] == -1) {
+        if (n <= 1) {
+            lookUp[n] = n;
+        } else {
             lookUp[n - 1] = fibonacciSumTillTerm(n - 1);
-        lookUp[n - 2] = fibonacciSumTillTerm(n - 2);
-        return lookUp[n - 1] + lookUp[n - 2];
+            lookUp[n - 2] = fibonacciSumTillTerm(n - 2);
+            lookUp[n] = lookUp[n - 1] + lookUp[n - 2];
+        }
     }
-
+    return lookUp[n];
 }
 
 int main(int argc, char** argv) {
