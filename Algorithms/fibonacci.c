@@ -26,7 +26,7 @@ unsigned long fibonacciSumTillTerm(long n) {
     return lookUp[n];
 }
 
-int main(int argc, char** argv) {
+int main1(int argc, char** argv) {
 
     for (int i = 0; i < 100; i++) lookUp[i] = -1;
     printf("%s", "Enter the term");
