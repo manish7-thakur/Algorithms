@@ -38,7 +38,7 @@ int calculate_power(int a, int b) {
 
 }
 
-int main(int argc, char** argv) {
+int main4(int argc, char** argv) {
     int a, b;
     printf("%s", "Enter base: ");
     scanf("%d", &a);
