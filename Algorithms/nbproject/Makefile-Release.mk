@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/BinarySearch.o \
 	${OBJECTDIR}/DACMaxMin.o \
 	${OBJECTDIR}/NearestPowerOfTwo.o \
 	${OBJECTDIR}/Power.o \
@@ -64,6 +65,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/algorithms: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/algorithms ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/BinarySearch.o: BinarySearch.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BinarySearch.o BinarySearch.c
 
 ${OBJECTDIR}/DACMaxMin.o: DACMaxMin.c 
 	${MKDIR} -p ${OBJECTDIR}

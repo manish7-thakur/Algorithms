@@ -14,6 +14,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="f2" displayName="DivideAndConquer" projectFiles="true">
+        <itemPath>BinarySearch.c</itemPath>
         <itemPath>DACMaxMin.c</itemPath>
         <itemPath>NearestPowerOfTwo.c</itemPath>
         <itemPath>Power.c</itemPath>
@@ -44,6 +45,8 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="BinarySearch.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="DACMaxMin.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="NearestPowerOfTwo.c" ex="false" tool="0" flavor2="0">
@@ -75,6 +78,8 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="BinarySearch.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="DACMaxMin.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="NearestPowerOfTwo.c" ex="false" tool="0" flavor2="0">

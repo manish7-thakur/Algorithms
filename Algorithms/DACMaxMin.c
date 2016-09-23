@@ -25,7 +25,7 @@ void dac_max_min(int a[], int start, int end, int* max, int* min) {
     }
 }
 
-int main(int argc, char** argv) {
+int main5(int argc, char** argv) {
 
     int a[] = {5, 9, 3, 6, 4, 56, 35, 583, 237, 58, 383, 873};
     int max, min;
