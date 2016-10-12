@@ -14,8 +14,11 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="f2" displayName="DivideAndConquer" projectFiles="true">
+        <logicalFolder name="f1" displayName="Misc" projectFiles="true">
+        </logicalFolder>
         <itemPath>BinarySearch.c</itemPath>
         <itemPath>DACMaxMin.c</itemPath>
+        <itemPath>MergeSort.c</itemPath>
         <itemPath>NearestPowerOfTwo.c</itemPath>
         <itemPath>Power.c</itemPath>
       </logicalFolder>
@@ -49,6 +52,8 @@
       </item>
       <item path="DACMaxMin.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="MergeSort.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="NearestPowerOfTwo.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Power.c" ex="false" tool="0" flavor2="0">
@@ -81,6 +86,8 @@
       <item path="BinarySearch.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="DACMaxMin.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="MergeSort.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="NearestPowerOfTwo.c" ex="false" tool="0" flavor2="0">
       </item>

@@ -37,6 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/BinarySearch.o \
 	${OBJECTDIR}/DACMaxMin.o \
+	${OBJECTDIR}/MergeSort.o \
 	${OBJECTDIR}/NearestPowerOfTwo.o \
 	${OBJECTDIR}/Power.o \
 	${OBJECTDIR}/fibonacci.o
@@ -75,6 +76,11 @@ ${OBJECTDIR}/DACMaxMin.o: DACMaxMin.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DACMaxMin.o DACMaxMin.c
+
+${OBJECTDIR}/MergeSort.o: MergeSort.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/MergeSort.o MergeSort.c
 
 ${OBJECTDIR}/NearestPowerOfTwo.o: NearestPowerOfTwo.c 
 	${MKDIR} -p ${OBJECTDIR}

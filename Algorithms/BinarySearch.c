@@ -31,10 +31,12 @@ int binary_search(int a[], int start, int end, int element) {
 /*
  * 
  */
+/*
 int main(int argc, char** argv) {
     int a[] = {1, 2, 3, 4, 6, 7, 9, 39, 50};
     int element = 1;
     printf("Position of element is : %d", binary_search(a, 0, sizeof(a)/sizeof(int) - 1, element));
     return (EXIT_SUCCESS);
 }
+*/
 
