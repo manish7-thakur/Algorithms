@@ -40,6 +40,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/MergeSort.o \
 	${OBJECTDIR}/NearestPowerOfTwo.o \
 	${OBJECTDIR}/Power.o \
+	${OBJECTDIR}/QuickSort.o \
 	${OBJECTDIR}/fibonacci.o
 
 
@@ -91,6 +92,11 @@ ${OBJECTDIR}/Power.o: Power.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Power.o Power.c
+
+${OBJECTDIR}/QuickSort.o: QuickSort.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/QuickSort.o QuickSort.c
 
 ${OBJECTDIR}/fibonacci.o: fibonacci.c 
 	${MKDIR} -p ${OBJECTDIR}

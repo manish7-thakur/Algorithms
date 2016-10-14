@@ -62,6 +62,7 @@ void merge_sort(int a[], int start, int endIndex) {
         merge(a, start, mid, endIndex);
 }
 
+/*
 int main(int argc, char** argv) {
 
     int a[] = {675, 78, 35, 34, 756, 45, 24, 54, 47, 48};
@@ -71,4 +72,5 @@ int main(int argc, char** argv) {
         printf("%d\t", a[i]);
     return (EXIT_SUCCESS);
 }
+*/
 
